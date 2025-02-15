@@ -5453,7 +5453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:^2.3.2, fsevents@npm:~2.3.2":
   version: 2.3.3
   resolution: "fsevents@npm:2.3.3"
   dependencies:
@@ -5463,7 +5463,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A~2.3.2#~builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@npm%3A~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.3
   resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=18f3a7"
   dependencies:
@@ -6425,6 +6425,7 @@ __metadata:
     react: 19.0.0-rc-66855b96-20241106
     react-country-flag: ^3.1.0
     react-dom: 19.0.0-rc-66855b96-20241106
+    react-jwt: ^1.2.2
     server-only: ^0.0.1
     tailwindcss: ^3.0.23
     tailwindcss-radix: ^2.8.0
@@ -7439,6 +7440,20 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react-jwt@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "react-jwt@npm:1.2.2"
+  dependencies:
+    fsevents: ^2.3.2
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: 78db0bc9449ad3683caf16d132c54e4032a78af86c3a27863e708cf0725720897966216175a225537f18ecd6d6c935243d6962702d1bffdbecde795fa1a1c80e
   languageName: node
   linkType: hard
 

@@ -28,7 +28,9 @@ export const retrieveCustomer =
       .fetch<{ customer: HttpTypes.StoreCustomer }>(`/store/customers/me`, {
         method: "GET",
         query: {
-          fields: "*orders",
+          // TODO: fix bug with getting orders
+          // "message": "column s1.deleted_at does not exist"
+          //fields: "*orders",
         },
         headers,
         next,
